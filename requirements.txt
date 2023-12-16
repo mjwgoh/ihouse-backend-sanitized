@@ -1,0 +1,12 @@
+pymongo==4.6.0
+python-dotenv~=1.0.0
+Flask~=2.2.2
+gunicorn
+click
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+requests
+google-auth
+google
