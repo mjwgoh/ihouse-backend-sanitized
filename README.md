@@ -1,35 +1,26 @@
 # Backend API Documentation
 
 ## Overview
-This backend service, built using Flask, interacts with a MongoDB database and provides endpoints for managing events, users, and other fields. It also includes Google OAuth authentication.
+
+This backend service is built using Flask and communicates with a MongoDB database. It provides various endpoints for managing events, users, and other related fields. The service also includes authentication functionality using Google OAuth.
 
 ## Prerequisites
+
 - Python 3
 - Flask
 - MongoDB
 - Google OAuth credentials
 
 ## Configuration
-Set up the following environment variables in a `.env` file:
-- `MONGODB_URI`: URI connection string for MongoDB.
-- `GOOGLE_CLIENT_ID`: Google client ID for OAuth.
 
-# Endpoints
+Before starting the service, configure the following environment variables in a `.env` file:
 
-## General
-GET /: Confirms that the API server is running.
-Users
-POST /users/login: Validates user login using a JWT token.
-Events
-GET /events: Retrieves events based on query parameters.
-POST /events: Adds a new event.
-GET /events/<event_id>: Retrieves a specific event.
-POST /events/<event_id>: Updates a specific event.
-PUT /events/<event_id>: Modifies an existing event.
-DELETE /events/<event_id>: Deletes an event.
-Fields
-GET /fields: Retrieves fields based on query parameters.
-POST /fields: Adds a new field.
-PUT /fields/<field>/<id>: Updates a specific field.
-DELETE /fields/<field>/<id>: Deactivates a field.
-Utility Functions
+- `MONGODB_URI`: The URI connection string for your MongoDB database.
+- `GOOGLE_CLIENT_ID`: Your Google client ID for OAuth authentication.
+
+## Running the Service
+
+To start the service, run:
+
+```bash
+python [your_script_name].py
